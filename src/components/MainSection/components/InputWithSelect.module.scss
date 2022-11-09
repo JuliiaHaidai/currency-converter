@@ -1,0 +1,90 @@
+.inputSelectWrapper {
+  display: flex;
+  padding: 20px;
+  border: 5px solid rgb(1, 91, 38);
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  input {
+    height: 50px;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    color: #005bff;
+    border-radius: 20px;
+    border: 2px solid #8dbfc1;
+    &:focus {
+      border-color: rgb(57, 97, 218);
+    }
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+}
+.opttionsContainer {
+  position: absolute;
+  width: 80px;
+  right: -20px;
+  top: 40px;
+  background: azure;
+  box-shadow: 3px 5px 8px rgb(0 0 0 / 50%);
+  input {
+    width: inherit;
+    height: 30px;
+    margin-bottom: 10px;
+    color: #07248b;
+    font-size: 16px;
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+}
+.select {
+  position: relative;
+  margin-left: 10px;
+}
+.mainOption {
+  height: 100%;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  background: aliceblue;
+  border-radius: 10px;
+  border: 1px solid #045204;
+  font-size: 18px;
+  font-weight: 600;
+}
+.singleOption {
+  cursor: pointer;
+  line-height: 21px;
+  &:hover {
+    background: rgba(94, 195, 249, 0.3);
+  }
+}
+.optionsWrapper {
+  max-height: 150px;
+  overflow-y: auto;
+  span {
+    color: rgb(182, 84, 84);
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #3d4561;
+    border-radius: 4px;
+  }
+}

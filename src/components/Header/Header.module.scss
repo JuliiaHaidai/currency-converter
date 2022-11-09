@@ -1,0 +1,20 @@
+.header {
+  background: rgb(202, 255, 223);
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px ridge rgb(9 100 27 / 60%);
+  div {
+    height: 100%;
+    display: inherit;
+    align-items: center;
+    font-size: 22px;
+    color: #2e4def;
+    font-weight: 600;
+  }
+  div:first-child {
+    border-right: 5px ridge rgb(9 100 27 / 60%);
+    padding-right: 40px;
+    margin-right: 40px;
+  }
+}
